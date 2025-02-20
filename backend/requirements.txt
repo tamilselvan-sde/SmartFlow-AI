@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+graphviz
+streamlit
+requests 
+groq
+Pillow
+python-multipart

@@ -1,0 +1,32 @@
+graph TD;
+    subgraph "Java Fundamentals"
+        A1["Install Java"] -->|Basic Syntax| B["Variables, Data Types & Operators"]
+        A2["Control Flow"] -->|Conditional Statements| B
+        A2 -->|Loops| C["For,While,Do-While, Switch-Case"]
+        A2 -->|Exception Handling| D["Try-Catch-Finally"]
+    end
+    subgraph "Java OOP"
+        B -->|Classes & Objects| E["Constructors, public/private/access modifiers"]
+        D -->|Error Handling| F["Throws, catch, finally block"]
+        C -->|File Input/Output| G["Read/Write Files, Console I/O"]
+    end
+    subgraph "Web Development"
+        B -->|Java Servlet| H["Servlet Types, Request/Response Objects"]
+        G -->|Spring Framework| I["MVC, bean scopes, dependency injection"]
+        H -->|JavaServer Faces| J["JSF Lifecycle, Render Responses"]
+    end
+    subgraph "Databases"
+        E -->|Database Fundamentals| K["Database Models, SQL Basics"]
+        I -->|Spring Data JPA| L["CRUD Operations, persistence.xml"]
+        J -->|Hibernate ORM| M["NHibernate, HQL, Mapping Files"]
+    end
+    subgraph "Cloud & Deployment"
+        G -->|Cloud Computing| O["AWS Lambda, Serverless Architecture"]
+        M -->|Containerization| P["Docker, Kubernetes"]
+        K -->|DevOps| Q["Jenkins, Travis CI, Git Hooks"]
+    end
+    subgraph "Security & Testing"
+        F -->|Security Fundamentals| R["OWASP Security Cheatsheet"]
+        P -->|Testing Frameworks| S["JUnit, TestNG, Mockito"]
+        R -->|Security Testing| T["security scans, penetration testing"]
+end

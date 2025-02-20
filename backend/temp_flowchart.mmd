@@ -1,0 +1,39 @@
+graph TD;
+    
+    subgraph "Python Engineer Roadmap"
+        A["Learn Core Python"] -->|General Purpose| B["NumPy & Pandas"]
+        B -->|Data Handling| C["Data Science Libraries"]
+        C -->|Machine Learning| D["Scikit-learn & TensorFlow"]
+        D -->|Cloud Computing| E["AWS & GCP"]
+        E -->|Distributed Systems| F["Dask & Spark"]
+        F -->|DevOps & Testing| G["CI/CD & PyTest"]
+        
+        subgraph "Data Handling & Processing"
+            B -->|Data Exploration| H["Pandas Dataframe"]
+            C -->|Data Visualization| I["Matplotlib & Seaborn"]
+            H -->|Data Cleaning| J["Pandas Cleaning"]
+            J -->|Data Transformation| K["Pandas Transform"]
+        end
+        
+        subgraph "Machine Learning & AI"
+            D -->|Supervised Learning| L["Scikit-learn"]
+            D -->|Unsupervised Learning| M["Scikit-learn"]
+            D -->|Deep Learning| N["TensorFlow & Keras"]
+            L -->|Model Evaluation| O["Metrics & Evaluation"]
+            O -->|Model Deployment| P["Model Serving"]
+        end
+        
+        subgraph "Cloud Computing & Distributed Systems"
+            E -->|AWS Services| Q["S3 & DynamoDB"]
+            E -->|GCP Services| R["BigQuery & Cloud Storage"]
+            F -->|Distributed Computing| S["Dask & Spark"]
+        end
+        
+        subgraph "DevOps & Testing"
+            G -->|CI/CD Pipelines| T[" Jenkins & GitLab CI/CD"]
+            G -->|Testing Frameworks| U["Pytest & Unittest"]
+        end
+        
+        M -->|Distributed Training| V["Distributed TensorFlow"]
+        V -->|Cloud-Based Training| W["GCP & AWS"]
+    end
