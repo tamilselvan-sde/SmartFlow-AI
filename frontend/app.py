@@ -3,9 +3,11 @@ import os
 from PIL import Image
 import time
 import sys
-sys.path.append('/backend')
-from backend import generate_roadmap, clean_mermaid_code, save_mermaid_code
-from flowchart import generate_flowchart, read_mermaid_code
+
+# Add the correct path to backend
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from backend.utils.roadmap_generator import generate_roadmap, clean_mermaid_code, save_mermaid_code
+from backend.utils.flowchart import generate_flowchart, read_mermaid_code
 
 # Page configuration
 st.set_page_config(
