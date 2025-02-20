@@ -3,7 +3,7 @@ import os
 from PIL import Image
 import time
 import sys
-sys.path.append('/Users/tamilselavans/Downloads/roadmap-GPT/backend')
+sys.path.append('/backend')
 from backend import generate_roadmap, clean_mermaid_code, save_mermaid_code
 from flowchart import generate_flowchart, read_mermaid_code
 
@@ -40,8 +40,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Paths
-FLOWCHART_PATH = "/Users/tamilselavans/Downloads/roadmap-GPT/backend/flowchart.png"
-MERMAID_FILE_PATH = "/Users/tamilselavans/Downloads/roadmap-GPT/backend/flowchart.mmd"
+FLOWCHART_PATH = "/backend/flowchart.png"
+MERMAID_FILE_PATH = "/backend/flowchart.mmd"
 
 # App Header
 st.title("🚀 SmartFlow AI")
