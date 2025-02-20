@@ -3,7 +3,7 @@ import re
 import requests
 
 # Groq API Credentials
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "YOUR GROQ API KEY"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Path where the Mermaid.js file will be saved
