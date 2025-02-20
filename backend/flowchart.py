@@ -3,8 +3,8 @@ import os
 import shutil
 
 # Path to the input Mermaid.js file
-MERMAID_FILE_PATH = "/Users/tamilselavans/Downloads/roadmap-GPT/backend/flowchart.mmd"
-OUTPUT_FILE = "/Users/tamilselavans/Downloads/roadmap-GPT/backend/flowchart.png"  # High-quality output image
+MERMAID_FILE_PATH = "/backend/flowchart.mmd"
+OUTPUT_FILE = "/backend/flowchart.png"  # High-quality output image
 
 def read_mermaid_code(file_path):
     """Reads Mermaid.js code from a file and ensures it's valid."""

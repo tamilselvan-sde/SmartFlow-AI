@@ -7,7 +7,7 @@ GROQ_API_KEY = "YOUR GROQ API KEY"
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # Path where the Mermaid.js file will be saved
-MERMAID_FILE_PATH = "/Users/tamilselavans/Downloads/roadmap-GPT/backend/flowchart.mmd"
+MERMAID_FILE_PATH = "/backend/flowchart.mmd"
 
 def generate_roadmap(topic):
     """Generate a structured hierarchical roadmap in Mermaid.js syntax using Groq API"""
